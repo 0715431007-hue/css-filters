@@ -6,3 +6,49 @@
     flex-wrap: wrap;
     gap: 10px;
 }
+
+#image1 {
+    filter:grayscale(50%) opacity(50%);
+}
+
+#image2 {
+    filter:blur(5px);
+    transition:500ms;
+}
+
+#image2:hover {
+    filter:unset;
+}
+
+#image3 {
+    filter:invert(100%);
+}
+
+#image4 {
+    filter:hue-rotate(50deg);
+    animation:color-rotate 5s;
+    animation-iteration-count:infinite;
+}
+
+@keyframes color-rotate {
+    0% {
+        filter:hue-rotate(0deg);
+    }
+    100% {
+        filter:hue-rotate(360deg);
+    }
+}
+
+#div1 {
+    background-color:aqua;
+    color:blue;
+    width:200px;
+    height:200px;
+    filter:saturate(50%)
+}
+
+#div2 {
+    font-size: 50px;
+    filter:drop-shadow(8px 8px 8px blue)
+}
+
